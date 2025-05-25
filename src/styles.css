@@ -1,3 +1,47 @@
+:root {
+    --sage: #706D54;
+    --beige: #A08963;
+    --coffee: #C9B194;
+    --gray: #DBDBDB;
+}
+#title {
+    padding:15px;
+    text-align: center;
+    color: var(--gray);
+    margin: 0;
+}
 body {
-    background-color: blue
+    background-color: var(--coffee);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+header {
+    background-color: var(--sage);
+    margin: 0;
+    border-bottom: 1px solid;
+    max-height: 118px;
+    
+}
+nav {
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+nav button {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-width: 1px;
+    height: 51px;
+    width: 250px;
+    background-color: var(--gray);
+    border-bottom-width: 0;
+    
+}
+button.selected {
+    height: 52px;
+    
+    background-color: var(--coffee);
 }
